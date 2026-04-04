@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Android  -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="The User Experience Survey for the Wuyuan Ink-Water Website, helping us to enhance your browsing experience"
+    />
+    <meta
+      name="description"
+      content="The user experience survey for the Shuimo Wuyuan website helps us improve your browsing experience."
+    />
+    <meta name="author" content="hke" />
+    <meta
+      name="keywords"
+      content="User experience, questionnaire survey, ink-wash Wuyuan"
+    />
+
+    <title>User Experience Questionnaire — Wuyuan Ink Painting</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/survey.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-stamp">Wu</span>
+          <span class="logo-text">Ink Painting of Wuyuan</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="./explore.html">In-depth exploration</a>
+          </li>
+          <li>
+            <a href="./souvenirs.html">Surrounding Area Bar</a>
+          </li>
+          <li>
+            <a href="./plan.html" class="nav-cta">Book a trip →</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="survey-hero">
+      <div class="container">
+        <span class="section-badge">📋 User experience survey</span>
+        <h1>Help us do better</h1>
+        <p class="survey-subtitle">
+          Your feedback is very important to us. Please take a few minutes to
+          complete the following questionnaire.
+        </p>
+      </div>
+    </header>
+
+    <div class="survey-progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <main class="survey-main">
+      <div class="container">
+        <form id="surveyForm" class="survey-form">
+          <div class="survey-question" data-q="1">
+            <div class="q-number">Q1</div>
+            <h3>The overall layout of the website/application is intuitive.</h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q1" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q1" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q1" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q1" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q1" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="2">
+            <div class="q-number">Q2</div>
+            <h3>
+              Navigating through different sections of the website/application
+              is straightforward.
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q2" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q2" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q2" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q2" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q2" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="3">
+            <div class="q-number">Q3</div>
+            <h3>
+              The design elements (buttons, links, menus) are easy to locate and
+              use.
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q3" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q3" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q3" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q3" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q3" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="4">
+            <div class="q-number">Q4</div>
+            <h3>
+              The loading times of pages/screens are acceptable. There are no
+              problems in loading each page.
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q4" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q4" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q4" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q4" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q4" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="5">
+            <div class="q-number">Q5</div>
+            <h3>
+              The visual design of the website/application is appealing.
+              Sufficient graphics (and animation if necessary).
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q5" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q5" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q5" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q5" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q5" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="6">
+            <div class="q-number">Q6</div>
+            <h3>
+              Error messages, if encountered, are clear and helpful. (e.g.:
+              There is alt text embedded to the image).
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q6" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q6" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q6" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q6" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q6" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="7">
+            <div class="q-number">Q7</div>
+            <h3>
+              The process of completing tasks (e.g.: looking for specific link
+              to click to access an article) is efficient.
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q7" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q7" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q7" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q7" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q7" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="8">
+            <div class="q-number">Q8</div>
+            <h3>
+              The text used throughout the website/application is clear and
+              readable. (e.g.: Good choice of font, proper styling, sufficient
+              font size, etc.).
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q8" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q8" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q8" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q8" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q8" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="9">
+            <div class="q-number">Q9</div>
+            <h3>
+              The website/application provides adequate guidance or assistance
+              when needed. (e.g.: guided text such as "Click here to
+              process...").
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q9" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q9" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q9" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q9" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q9" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-question" data-q="10">
+            <div class="q-number">Q10</div>
+            <h3>
+              I would recommend this website/application to others based on its
+              usability. (e.g.: user friendly, very appealing, comfortable
+              layout).
+            </h3>
+            <div class="likert-group">
+              <label class="likert-option">
+                <input type="radio" name="q10" value="1" required />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q10" value="2" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Disagree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q10" value="3" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Neutral</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q10" value="4" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Agree</span>
+              </label>
+              <label class="likert-option">
+                <input type="radio" name="q10" value="5" />
+                <span class="radio-mark"></span>
+                <span class="label-text">Strongly Agree</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="survey-submit">
+            <button type="submit" class="btn-submit">
+              Submit Questionnaire ✓
+            </button>
+            <p class="submit-hint">
+              Click the submit button to complete the questionnaire.
+            </p>
+          </div>
+        </form>
+
+        <div class="survey-success" id="surveySuccess">
+          <div class="success-icon">✅</div>
+          <h2>Questionnaire submitted successfully!</h2>
+          <p>
+            Thank you for taking the time to complete this questionnaire.<br />Your
+            feedback will help us continuously improve the website experience.
+          </p>
+          <div class="success-actions">
+            <a href="../../index.html" class="btn-back">Return Home</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-stamp">Wu</span>
+          <span>Ink Painting of Wuyuan</span>
+        </div>
+        <p class="footer-text">
+          © 2026 Tourism Promotion of Wuyuan, a Landscape of Ink Painting –
+          Wuyuan County, Shangrao City, Jiangxi Province
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/analytics.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/survey.js"></script>
+  </body>
+</html>

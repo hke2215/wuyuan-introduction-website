@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Android  -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Travel Planning · Book a Customized Tour - Ink-Waterful Wuyuan"
+    />
+    <meta
+      name="description"
+      content="Book a customized tour of Wuyuan online, explore attractions with an interactive map, and book your own tour guide service."
+    />
+    <meta name="author" content="hke" />
+    <meta
+      name="keywords"
+      content="Wuyuan, travel planning, customized tour, ink wash painting"
+    />
+
+    <title>
+      Travel Planning · Customized Trip Booking — Wuyuan, a picturesque
+      landscape
+    </title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/plan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-stamp">Wu</span>
+          <span class="logo-text">Ink Painting of Wuyuan</span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="../../index.html">Home</a>
+          </li>
+          <li>
+            <a href="./explore.html">In-depth exploration</a>
+          </li>
+          <li>
+            <a href="./survey.html">Questionnaire survey</a>
+          </li>
+          <li>
+            <a href="./souvenirs.html">Surrounding Area Bar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero hero-plan" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          🗺️ Plan your trip · Customize your exclusive experience
+        </p>
+        <h1 class="hero-title">
+          <span class="title-line">Travel planning</span>
+          <span class="title-line-sub"
+            >Make every step full of anticipation</span
+          >
+        </h1>
+        <p class="hero-desc">
+          Explore interactive maps, book private guides, and customize your
+          Wuyuan trip.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-primary">Book Now</a>
+          <a href="#map" class="btn btn-ghost">View map</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-bar" id="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <span class="stat-number" id="totalVisitors">--</span>
+          <span class="stat-label">Total number of visitors</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="todayVisitors">--</span>
+          <span class="stat-label">Today's visitors</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="totalBookings">--</span>
+          <span class="stat-label">Number of reservations</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" id="pageViews">--</span>
+          <span class="stat-label">Page browsing</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section" id="map">
+      <div class="section-header">
+        <span class="section-tag">Interactive Map</span>
+        <h2 class="section-title">Distribution of scenic spots in Wuyuan</h2>
+        <p class="section-desc">
+          Click on the markers on the map to discover every wonderful spot in
+          Wuyuan.
+        </p>
+      </div>
+      <div class="map-wrapper">
+        <div class="map-container">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=117.6%2C29.0%2C118.2%2C29.5&layer=mapnik&marker=29.248%2C117.861"
+            width="100%"
+            height="500"
+            style="border: 0; border-radius: 12px"
+            allowfullscreen
+            loading="lazy"
+            title="Wuyuan Interactive Map"
+          >
+          </iframe>
+        </div>
+        <div class="map-spots">
+          <h3>Popular attractions navigation</h3>
+          <div class="spot-list">
+            <a
+              href="https://www.openstreetmap.org/?mlat=29.3&mlon=117.8#map=14/29.3/117.8"
+              target="_blank"
+              rel="noopener"
+              class="spot-item"
+            >
+              <span class="spot-icon">🌼</span>
+              <div>
+                <strong>Jiangling rapeseed flowers</strong>
+                <p>One of China's four major rapeseed flower fields</p>
+              </div>
+            </a>
+            <a
+              href="https://www.openstreetmap.org/?mlat=29.25&mlon=117.95#map=14/29.25/117.95"
+              target="_blank"
+              rel="noopener"
+              class="spot-item"
+            >
+              <span class="spot-icon">🏮</span>
+              <div>
+                <strong>Huangling Ancient Village</strong>
+                <p>
+                  The spectacular sight of autumn drying in the sun, in the
+                  ancient streets and alleys of Tianjie.
+                </p>
+              </div>
+            </a>
+            <a
+              href="https://www.openstreetmap.org/?mlat=29.22&mlon=117.85#map=14/29.22/117.85"
+              target="_blank"
+              rel="noopener"
+              class="spot-item"
+            >
+              <span class="spot-icon">🌉</span>
+              <div>
+                <strong>Likeng Ancient Village</strong>
+                <p>Small bridge, flowing water, and houses</p>
+              </div>
+            </a>
+            <a
+              href="https://www.openstreetmap.org/?mlat=29.2&mlon=117.9#map=14/29.2/117.9"
+              target="_blank"
+              rel="noopener"
+              class="spot-item"
+            >
+              <span class="spot-icon">🏛️</span>
+              <div>
+                <strong>Jiangwan Ancient Town</strong>
+                <p>Xiaojiang Ancestral Hall, a 5A scenic spot</p>
+              </div>
+            </a>
+            <a
+              href="https://www.openstreetmap.org/?mlat=29.15&mlon=117.75#map=14/29.15/117.75"
+              target="_blank"
+              rel="noopener"
+              class="spot-item"
+            >
+              <span class="spot-icon">🍃</span>
+              <div>
+                <strong>Sixi Yancun</strong>
+                <p>Huizhou Merchant Ancient Residence Cluster</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="section-header">
+        <span class="section-tag">Book a tour guide</span>
+        <h2 class="section-title">Customize your Wuyuan trip</h2>
+        <p class="section-desc">
+          Professional local guides will take you on an in-depth experience,
+          helping you avoid crowds and discover hidden gems.
+        </p>
+      </div>
+      <div class="booking-wrapper">
+        <div class="booking-packages">
+          <div class="package-card">
+            <div class="package-badge">Base</div>
+            <h3>Half-day trip</h3>
+            <div class="package-price">¥299<span>/person</span></div>
+            <ul class="package-features">
+              <li>✓ Professional Chinese-speaking tour guide</li>
+              <li>
+                ✓ A carefully selected in-depth tour of an ancient village
+              </li>
+              <li>✓ Includes scenic area entrance ticket</li>
+              <li>✓ Local specialty lunch</li>
+            </ul>
+            <button
+              class="btn btn-ghost btn-book"
+              onclick="selectPackage('Half-day trip ¥299/person')"
+            >
+              Choose a solution
+            </button>
+          </div>
+          <div class="package-card package-featured">
+            <div class="package-badge">recommend</div>
+            <h3>Two-day in-depth</h3>
+            <div class="package-price">¥899<span>/person</span></div>
+            <ul class="package-features">
+              <li>✓ Senior cultural tour guide</li>
+              <li>✓ 3 ancient villages + flower terraces</li>
+              <li>✓ Full-trip tickets and transportation</li>
+              <li>✓ Selected B&B Accommodation</li>
+              <li>✓ Tea ceremony experience + Anhui cuisine tasting</li>
+            </ul>
+            <button
+              class="btn btn-primary btn-book"
+              onclick="selectPackage('Two-day in-depth ¥899/person')"
+            >
+              Choose a solution
+            </button>
+          </div>
+          <div class="package-card">
+            <div class="package-badge">Enjoy</div>
+            <h3>Four-day panoramic view</h3>
+            <div class="package-price">¥2,399<span>/person</span></div>
+            <ul class="package-features">
+              <li>✓ Private customized itinerary</li>
+              <li>✓ 5 ancient villages + hidden gems to explore</li>
+              <li>✓ Luxury accommodations + meals throughout the trip</li>
+              <li>✓ Intangible cultural heritage handicraft experience</li>
+              <li>✓ Private car pick-up and drop-off</li>
+              <li>✓ Professional photography and videography</li>
+            </ul>
+            <button
+              class="btn btn-ghost btn-book"
+              onclick="selectPackage('Four-day panoramic view ¥2,399/person')"
+            >
+              Choose a solution
+            </button>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <h3>📋 Fill in the appointment information</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Please enter your name."
+                maxlength="50"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Please enter your mobile phone number."
+                pattern="[0-9]{11}"
+                maxlength="11"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-Mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Optional field, used to receive confirmation information."
+                maxlength="100"
+              />
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of people *</label>
+              <select id="guests" name="guests" required>
+                <option value="">— Select number of people —</option>
+                <option value="1">1 person</option>
+                <option value="2">2 person</option>
+                <option value="3-5">3-5 person</option>
+                <option value="6-10">6-10 person</option>
+                <option value="10+">Teams of 10 or more people</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Departure Date *</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="package">Select Package *</label>
+              <select id="package" name="package" required>
+                <option value="">Please select a package</option>
+                <option value="Half-day trip">Half-day getaway</option>
+                <option value="Two-day in-depth">Two-day in-depth tour</option>
+                <option value="Four-day panoramic view">
+                  Four-day panoramic tour
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Special needs</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="3"
+              placeholder="For example: needing an English-speaking tour guide, having elderly/children in the group, dietary restrictions, etc."
+              maxlength="500"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            Submit an appointment request
+          </button>
+          <p class="form-note">
+            We will contact you within 24 hours after you submit your
+            application to confirm your itinerary.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="survey" id="survey">
+      <div class="section-header">
+        <span class="section-tag">Passenger feedback</span>
+        <h2 class="section-title">Share your Wuyuan experience</h2>
+        <p class="section-desc">
+          Your feedback is what motivates us to keep improving. Please feel free
+          to leave a message if you have any questions or suggestions.
+        </p>
+      </div>
+      <div class="survey-wrapper">
+        <div class="faq-section">
+          <h3>📌 Frequently Asked Questions</h3>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>How can I cancel or modify my appointment?</summary>
+              <p>
+                You can cancel or modify your reservation free of charge up to
+                48 hours before departure. Please contact us via the message
+                form or by calling our customer service hotline.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>
+                Do you provide English-speaking tour guide services?
+              </summary>
+              <p>
+                We offer bilingual (Chinese and English) tour guides. Please
+                specify your needs in the "Special Requests" section when making
+                a reservation.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>When is the best time to visit Wuyuan?</summary>
+              <p>
+                The rapeseed flowers are most spectacular when they bloom in
+                spring (March-April), and the autumn sun-drying in Huangling is
+                unique in autumn (October-November). Each season has its own
+                characteristics.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Are there any discounts for group travel?</summary>
+              <p>
+                Groups of 10 or more can enjoy a 15% discount. Please contact us
+                through the message below or the appointment form for details.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>How do I get to Wuyuan?</summary>
+              <p>
+                The most convenient option is to take the high-speed rail to
+                Wuyuan Station. Alternatively, you can transfer to a bus from
+                Jingdezhen or Huangshan Airport and enjoy a package that
+                includes a private car transfer service.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <form class="feedback-form" id="feedbackForm">
+          <h3>✉️ Feedback</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fbName">call *</label>
+              <input
+                type="text"
+                id="fbName"
+                required
+                placeholder="Your name"
+                maxlength="50"
+              />
+            </div>
+            <div class="form-group">
+              <label for="fbContact">Contact information</label>
+              <input
+                type="text"
+                id="fbContact"
+                placeholder="Mobile phone number or email address (optional)"
+                maxlength="100"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fbType">Feedback type *</label>
+            <select id="fbType" required>
+              <option value="">Please select</option>
+              <option value="Experience Review">Experience Review</option>
+              <option value="Question Consultation">
+                Question Consultation
+              </option>
+              <option value="Complaints and suggestions">
+                Complaints and suggestions
+              </option>
+              <option value="Cooperation negotiations">
+                Cooperation negotiations
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fbRating">Satisfaction rating</label>
+            <div class="star-rating" id="starRating">
+              <span class="star" data-value="1">★</span>
+              <span class="star" data-value="2">★</span>
+              <span class="star" data-value="3">★</span>
+              <span class="star" data-value="4">★</span>
+              <span class="star" data-value="5">★</span>
+            </div>
+            <input type="hidden" id="fbRating" value="0" />
+          </div>
+          <div class="form-group">
+            <label for="fbMessage">Message content *</label>
+            <textarea
+              id="fbMessage"
+              rows="4"
+              required
+              placeholder="Please enter your question, suggestion, or travel experience..."
+              maxlength="1000"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            Submit feedback
+          </button>
+          <p class="form-note">
+            We will reply to your message within 24 hours.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <div class="exit-modal" id="exitModal">
+      <div class="exit-modal-overlay" onclick="closeExitModal()"></div>
+      <div class="exit-modal-content">
+        <button
+          class="exit-modal-close"
+          onclick="closeExitModal()"
+          aria-label="close"
+        >
+          &times;
+        </button>
+        <div class="exit-modal-icon">🎋</div>
+        <h2>Wait a minute! Don't miss this opportunity!</h2>
+        <p>
+          Leave your email address and we will send it to you.<strong
+            >Exclusive Wuyuan Travel Guide</strong
+          >and<strong>Limited-time offer</strong>information!
+        </p>
+        <form class="exit-form" id="exitForm">
+          <input
+            type="email"
+            placeholder="Please enter your email address."
+            required
+            maxlength="100"
+            id="exitEmail"
+          />
+          <button type="submit" class="btn btn-primary">Get free guides</button>
+        </form>
+        <p class="exit-dismiss" onclick="closeExitModal()">No, thank you.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-stamp">Wu</span>
+          <span>Ink Painting of Wuyuan</span>
+        </div>
+        <p class="footer-text">
+          © 2026 Tourism Promotion of Wuyuan, a Landscape of Ink Painting –
+          Wuyuan County, Shangrao City, Jiangxi Province
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/analytics.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/plan.js"></script>
+  </body>
+</html>
